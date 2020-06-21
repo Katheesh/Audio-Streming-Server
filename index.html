@@ -1,0 +1,30 @@
+<html>
+<head>
+    <script language="JavaScript" src="jquery-2.1.4.js"></script>
+    <style>
+        iframe {
+            border: 0;
+        }
+    </style>
+</head>
+<body>
+<div id="place-holder"></div>
+<iframe height="100" src="playsong.php"></iframe>
+<script language="JavaScript">
+    jQuery(document).ready(function ($) {
+        function setCaption(){
+            $.ajax({
+                url: "info.php",
+                type: "post"
+            }).done(function (response, textStatus, jqXHR) {
+                console.log(response);
+                var data = $.parseJSON(response);
+                data = 'Playing: ' + data.playing.name + '(' + data.playing.duration + ')' + '<br />' + "\n" + 'Next: ' + data.next.name + '(' + data.next.duration + ')';
+                $('#place-holder').html(data);
+            })
+        }
+        setInterval(setCaption,2000);
+    })
+</script>
+</body>
+</html>
