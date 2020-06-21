@@ -7,8 +7,3 @@ You first need to add a folder to your radio folder and name it something like "
 The structure of list.txt is very simple. It is a comma seperated file. The first column is the path to the sound files and the second column is the time to broadcast it. I used new line (\r\n) to start a new row. 
 The getPlayingItem() method in the class outputs which file needs to be played and the playList() method does the rest. It starts playing based on the time the viewers requested so every one who connects to your internet radio listens to the same thing.
 
-License:
-This program is free for non-commercial use.
-
-Please send any comments and questions to my email address:
-haghparast@gmail.com

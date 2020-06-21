@@ -1,11 +1,5 @@
 <?php
 
-/*
-	$Author: mfboy
-	$Version: 0.1.2
-	$Date: 2009-04-11
-*/
-
 class mp3 {
 
     private $fp, $filesize, $fileanalysis;
