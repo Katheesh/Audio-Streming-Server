@@ -1,8 +1,8 @@
 <?php
 //set variables
 $settings = array(
-	"name" => "Radio Liefde",
-	"genre" => "Romance",
+	"name" => "Eelam Radio",
+	"genre" => "Dream",
 	"url" => $_SERVER["SCRIPT_URI"],
 	"bitrate" => 96,
 	"music_directory" => "music/",
